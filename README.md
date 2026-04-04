@@ -28,12 +28,12 @@ The system processes cropped animal images and performs classification using:
 ##  Project Structure
 edge-wildlife-classifier/
 │
-├── classify.py # Main classification script
-├── silhouette.py # Image preprocessing & silhouette extraction
-├── test_images/ # Sample images for testing
-├── model/ # Trained model (if included)
-├── requirements.txt # Dependencies
-└── README.md
+├── classify.py # Main classification script              
+├── silhouette.py # Image preprocessing & silhouette extraction              
+├── test_images/ # Sample images for testing                
+├── model/ # Trained model (if included)          
+├── requirements.txt # Dependencies            
+└── README.md                 
 
 
 ---

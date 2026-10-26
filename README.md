@@ -1,32 +1,30 @@
-<div align="center">
+<img src="docs/assets/banner.png" alt="Edge Wildlife Classifier — live deer, elk and moose recognition" width="100%">
 
-<img src="docs/assets/banner.png" alt="Edge Wildlife Classifier" height="72">
+<p align="center">
+  <img alt="ResNet18" src="https://img.shields.io/badge/ResNet18-transfer_learning-84cc16?style=flat-square&labelColor=0f1a08&logo=pytorch&logoColor=white">
+  <img alt="accuracy" src="https://img.shields.io/badge/accuracy-~88%25-84cc16?style=flat-square&labelColor=0f1a08">
+  <img alt="classes" src="https://img.shields.io/badge/classes-deer_·_elk_·_moose-84cc16?style=flat-square&labelColor=0f1a08">
+  <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-live_webcam-84cc16?style=flat-square&labelColor=0f1a08&logo=opencv&logoColor=white">
+  <img alt="Raspberry Pi" src="https://img.shields.io/badge/target-Raspberry_Pi-84cc16?style=flat-square&labelColor=0f1a08&logo=raspberrypi&logoColor=white">
+  <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/license-MIT-84cc16?style=flat-square&labelColor=0f1a08"></a>
+</p>
 
-<br/>
+```console
+$ python Animal_Classifier_Lite/classify.py
+Model loaded on cpu
+Classes: ['deer', 'elk', 'moose']
+```
 
-![Accuracy](https://img.shields.io/badge/Accuracy-~88%25-84CC16?labelColor=30363d) ![Classes](https://img.shields.io/badge/Classes-deer_·_elk_·_moose-84CC16?labelColor=30363d) ![ResNet18](https://img.shields.io/badge/ResNet18-transfer_learning-EE4C2C?labelColor=30363d&logo=pytorch&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-live_webcam-5C3EE8?labelColor=30363d&logo=opencv&logoColor=white) ![Edge](https://img.shields.io/badge/Edge-Raspberry_Pi-A22846?labelColor=30363d&logo=raspberrypi&logoColor=white) [![License](https://img.shields.io/badge/License-MIT-84CC16?labelColor=30363d)](LICENSE)
+<p align="center"><sub>Opens the webcam and labels every frame <code>DEER</code>, <code>ELK</code>, <code>MOOSE</code> — or <code>UNSURE</code> when it isn't confident. Press <kbd>q</kbd> to quit.</sub></p>
 
-<br/>
+**Contents:** [Highlights](#highlights) / [How it works](#how-it-works) / [Quick start](#quick-start) / [Train your own](#train-your-own)
 
-<img src="docs/assets/card.png" alt="Real-time on the edge — ~88% on deer, elk and moose" height="60">
+## Changelog
 
-<br/><br/>
-
-[Highlights](#highlights) | [How it works](#how-it-works) | [Quick start](#quick-start) | [Train your own](#train-your-own)
-
-</div>
-
----
-
-# Edge Wildlife Classifier: Real-Time Deer, Elk and Moose Recognition
-
-A ResNet18 fine-tuned in PyTorch that classifies wildlife live from a camera feed, with per-class confidence thresholds so it says **"UNSURE"** instead of guessing — small enough for edge hardware.
-
-## News
-
-- [2026-10] Runs from any folder, with a `requirements.txt` and refreshed documentation.
-- [2026-04] **Released:** ResNet18 deer / elk / moose classifier with live webcam inference and per-class confidence thresholds.
-
+```diff
++ 2026-10  runs from any folder · requirements.txt · new docs
++ 2026-04  first release: ResNet18 deer / elk / moose classifier, live webcam, per-class thresholds
+```
 
 ---
 

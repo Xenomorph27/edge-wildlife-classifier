@@ -2,9 +2,10 @@ import torch
 import torch.nn.functional as F
 from torchvision import models, transforms
 import cv2
+from pathlib import Path
 
 # ---------------- CONFIG ----------------
-MODEL_PATH = "animal_classifier.pth"
+MODEL_PATH = Path(__file__).resolve().parent / "animal_classifier.pth"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # ---------------- LOAD MODEL ----------------

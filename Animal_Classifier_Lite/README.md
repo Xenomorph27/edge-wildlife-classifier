@@ -1,53 +1,10 @@
-# Edge Wildlife Classifier
+# Animal_Classifier_Lite
 
-A lightweight edge AI system designed to classify wildlife species (deer, elk, moose) using efficient computer vision techniques. Built for deployment on resource-constrained devices like Raspberry Pi.
-
----
-
-##  Features
-
-- Lightweight and fast classification
-- Designed for edge devices (Raspberry Pi)
-- Works on real-world wildlife images
-- Handles low-to-medium quality inputs
-- Modular and extensible pipeline
-
----
-
-##  System Overview
-
-The system processes cropped animal images and performs classification using:
-
-1. Image preprocessing  
-2. Silhouette extraction  
-3. Feature extraction  
-4. Rule-based / ML classification  
-
----
-
-##  Project Structure
-edge-wildlife-classifier/                 
-│                  
-├── classify.py # Main classification script                      
-├── silhouette.py # Image preprocessing & silhouette extraction              
-├── test_images/ # Sample images for testing                
-├── model/ # Trained model (if included)          
-├── requirements.txt # Dependencies            
-└── README.md                 
-
-
----
-
-## Installation
+ResNet18 deer / elk / moose classifier with live webcam inference.
+See the [project README](../README.md) for details.
 
 ```bash
-git clone https://github.com/Xenomorph27/edge-wildlife-classifier.git
-cd edge-wildlife-classifier
-pip install -r requirements.txt
-```
-
-## Usage
-In Termial navigate to respective folder and  and run:
-```bash
-python classify.py
+pip install -r ../requirements.txt
+python classify.py            # live webcam, press q to quit
+python train_classifier.py    # retrain on dataset_final/<class>/*.jpg
 ```

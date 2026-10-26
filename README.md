@@ -1,20 +1,32 @@
 <div align="center">
 
-# 🦌 Edge Wildlife Classifier
+<img src="docs/assets/banner.png" alt="Edge Wildlife Classifier" height="72">
 
-### Live deer · elk · moose recognition from a webcam, small enough for the edge
+<br/>
 
-A ResNet18 fine-tuned in PyTorch that classifies wildlife in real time from a camera feed,
-with per-class confidence thresholds so it says **"UNSURE"** instead of guessing.
+![Accuracy](https://img.shields.io/badge/Accuracy-~88%25-84CC16?labelColor=30363d) ![Classes](https://img.shields.io/badge/Classes-deer_·_elk_·_moose-84CC16?labelColor=30363d) ![ResNet18](https://img.shields.io/badge/ResNet18-transfer_learning-EE4C2C?labelColor=30363d&logo=pytorch&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-live_webcam-5C3EE8?labelColor=30363d&logo=opencv&logoColor=white) ![Edge](https://img.shields.io/badge/Edge-Raspberry_Pi-A22846?labelColor=30363d&logo=raspberrypi&logoColor=white) [![License](https://img.shields.io/badge/License-MIT-84CC16?labelColor=30363d)](LICENSE)
 
-![Python](https://img.shields.io/badge/Python-3776ab?logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white)
-![ResNet18](https://img.shields.io/badge/ResNet18-transfer%20learning-orange)
-![OpenCV](https://img.shields.io/badge/OpenCV-5c3ee8?logo=opencv&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/edge-Raspberry_Pi-a22846?logo=raspberrypi&logoColor=white)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+<br/>
+
+<img src="docs/assets/card.png" alt="Real-time on the edge — ~88% on deer, elk and moose" height="60">
+
+<br/><br/>
+
+[Highlights](#highlights) | [How it works](#how-it-works) | [Quick start](#quick-start) | [Train your own](#train-your-own)
 
 </div>
+
+---
+
+# Edge Wildlife Classifier: Real-Time Deer, Elk and Moose Recognition
+
+A ResNet18 fine-tuned in PyTorch that classifies wildlife live from a camera feed, with per-class confidence thresholds so it says **"UNSURE"** instead of guessing — small enough for edge hardware.
+
+## News
+
+- [2026-10] Runs from any folder, with a `requirements.txt` and refreshed documentation.
+- [2026-04] **Released:** ResNet18 deer / elk / moose classifier with live webcam inference and per-class confidence thresholds.
+
 
 ---
 
